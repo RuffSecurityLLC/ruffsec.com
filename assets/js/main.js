@@ -250,4 +250,15 @@
     })
   });
 
+  /**
+   * Dynamically set the current year in the footer
+   */
+  window.addEventListener('load', () => {
+    const yearEl = select('#current-year');
+    if (yearEl) {
+      yearEl.textContent = new Date().getFullYear();
+    }
+  });
+
+
 })()
